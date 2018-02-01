@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exercise/account.iml" filepath="$PROJECT_DIR$/exercise/account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise [math]/exercise [math].iml" filepath="$PROJECT_DIR$/exercise [math]/exercise [math].iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise [score]/exercise [score].iml" filepath="$PROJECT_DIR$/exercise [score]/exercise [score].iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise [triangle]/exercise [triangle].iml" filepath="$PROJECT_DIR$/exercise [triangle]/exercise [triangle].iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled1.iml" filepath="$PROJECT_DIR$/untitled1.iml" />
+    </modules>
+  </component>
+</project>
