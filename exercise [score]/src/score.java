@@ -79,7 +79,7 @@ public class score {
             System.out.println("====================================================");
 
     }
- 
+
     // 메소드를 따로 선언하기위해선 공개범위/ return의 형태 / title을 적어주어야한다.
     private double score_sum(ArrayList<Integer> grade){
         double sum=0.0;
