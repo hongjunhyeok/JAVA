@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class score {
 
     //전체적인 상수 선언 & 인스턴스화
-    public static int _STUDENT_NUMBER_;
-    public static ArrayList<Integer> student_list=new ArrayList<Integer>();
-    public static boolean run = true;
-    public static Scanner scanner= new Scanner(System.in);
-    public static score my_score = new score();
+    private static int _STUDENT_NUMBER_;
+    private static ArrayList<Integer> student_list=new ArrayList<Integer>();
+    private static boolean run = true;
+    private static Scanner scanner= new Scanner(System.in);
+    private static score my_score = new score();
 
     //전체적인 함수 실행
     public static void main(String[] args){
@@ -56,12 +56,12 @@ public class score {
         }
     }
 
-    public void set_student_number(){
+    private void set_student_number(){
         System.out.println("학생 수를 입력하세요");
         int student_number = scanner.nextInt();
         _STUDENT_NUMBER_=student_number;
     }
-    public void score_input() {
+    private void score_input() {
         for (int i = 0; i < _STUDENT_NUMBER_; i++) {
             System.out.format("%d번째 학생의 점수를 입력하세요\n", i+1);
             int point =scanner.nextInt();
@@ -69,7 +69,7 @@ public class score {
 
         }
     }
-    public void score_list(){
+    private void score_list(){
 
 
             System.out.println("====================================================");
@@ -81,7 +81,7 @@ public class score {
     }
 
     // 메소드를 따로 선언하기위해선 공개범위/ return의 형태 / title을 적어주어야한다.
-    public double score_sum(ArrayList<Integer> grade){
+    private double score_sum(ArrayList<Integer> grade){
         double sum=0.0;
         for(int i=0;i<grade.size();i++){
             sum+=grade.get(i);
@@ -90,17 +90,17 @@ public class score {
         return sum;
     }
 
-    public double score_average(ArrayList<Integer> grade){
+    private double score_average(ArrayList<Integer> grade){
         double average=0.0;
         double sum =this.score_sum(grade);
         return average=sum/_STUDENT_NUMBER_;
     }
 
-    public double score_rank(ArrayList<Integer> grade){
+    private double score_rank(ArrayList<Integer> grade){
         int max = Collections.max(grade);
         return max;
     }
-    public void score_menu(){
+    private void score_menu(){
         System.out.println("====================================================");
         System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
         System.out.println("====================================================");
