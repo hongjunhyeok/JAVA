@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?> 
+  
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent"
+ android:layout_height="fill_parent">
+
+     <RelativeLayout
+         android:layout_width="149dp"
+         android:layout_height="match_parent" >
+         <Button
+       android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         android:text="graph"
+          android:id="@+id/data"
+          />
+
+          <Button
+              android:id="@+id/graph"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_toRightOf="@+id/data"
+              android:text="data" />
+
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/data"
+              android:layout_marginTop="28dp"
+              android:text="TextView" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/textView1"
+              android:layout_marginTop="24dp"
+              android:text="TextView" />
+
+          <Button
+              android:id="@+id/dataleave"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/textView2"
+              android:layout_marginTop="124dp"
+              android:text="데이터전송" />
+
+          <Button
+              android:id="@+id/graphsave"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:text="그래프 저장" />
+
+     </RelativeLayout>
+     
+     
+          
+    
+
+     
+  
+
+
+
+  <RelativeLayout android:id="@+id/graphview"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent" /> 
+  </LinearLayout>
